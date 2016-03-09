@@ -1,0 +1,33 @@
+
+
+<!doctype HTML>
+<html>
+<head>
+  <title>JS Atomic 05</title>
+  <script type="text/javascript" src="global.js"></script>
+</head>
+<body>
+  <h1>JS Atomic 05</h1>
+  <!-- Answer the 3 questions above here -->
+  <h2>1. What is the data-type (e.g. string or integer) of the information that comes in? What happens if the user inputs a number -- does it stay an integer? Use `typeof` and `console.log()` to help with this</h2>
+  <p>This from webdevelopernotes.com: It's important to remember that the value returned by prompt() and subsequently stored in a variable will always be a string data type. This is fine if you are dealing with text, but might present problems to the code if you plan to receive numeric data through prompt(). Javascript provides two functions to convert this string value to a numeric data type; parseInt() and parseFloat(). The parseInt() converts a string to an integer value while parseFloat() parses the string converting it to a floating point number.</p>
+
+  <h2>2. What happens if the user clicks "OK" (or equivalent) without typing anything in? What information gets assigned to a variable, if any?</h2>
+  <p>Based on my experiment with my own code, everything proceeds but there is just a blank where, say, the age would be. It does not stop the program. I'm sure there are cases in which you must enter the information to proceed.</p>
+
+  <h2>3. How did you choose your variable names? If you gave a list of variable names to someone who hasn't seen your code, could they reasonably predict what information you might store in each?</h2>
+  <p>I chose my variable names to give me as full of a picture as possible of who gave me the information and what the information is, without getting into ridiculously long variable names. In "userAge" the "user" part might be superfluous here, but I am wondering if in a larger project I might need to distinguish "userData" from somebody else's data.</p>
+
+  <h2>4. If you completely changed a question you were asking the user, would it make sense to totally rename the variable? What if you changed the order of your questions?</h2>
+  <p>That's tricky. I would think that if I changed the question enough that a reasonable person would provide different inputs from the previous asking of the question, I would rename the variable. It might be a case where we would not want to mingle this data with data captured previously. We might even be changing this intentionally, to see if we get "better" answers. Changing the order of the questions can have a similar effect. In a political questionnaire, for example, the first few questions might establish a mindset or steer the user to an opinion expressed as a response to a later question. Changing the order of the questions can change the responses, so yes, I would probably change the variable name.</p>
+
+  <h2>5. In these exercises, we use `prompt()` to collect information, but most websites do that ask for information do not use `prompt()` -- how do they collect information (what HTML elements do they use)? What might be an advantage to doing it that way instead of with `prompt()`? Are there any disadvantages? Why might you use `prompt()`?</h2>
+  <p>Interesting. I can find various programmers saying they don't like to use "prompt()" or it's ugly or what have you. Not enough detail about why. I would think "prompt" might be a simple way to get small amounts of must-have information, or to get you to purchase Sublime. Even the erb pages we have been making might be a better option for something like an online tax form.</p>
+
+ <h2>6. Research `prompt()` -- is there any way to make it so that there are two (or more) fields?</h2>
+  <p>The most popular answer on Stack Overflow says no, and steers people to jQueryUI.</p>
+
+  <h2>What questions do you have?</h2>
+  <p>None at this point. Maybe hundreds later.</p>
+</body>
+</html>
