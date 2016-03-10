@@ -3,11 +3,15 @@
 <!doctype HTML>
 <html>
 <head>
-  <title>JS Atomic 04</title>
-  <script type="text/javascript" src="global.js"></script>
+  <title>JS Atomic 06c</title>
+  <script type="text/javascript" src="global6c.js"></script>
 </head>
 <body>
-  <h1>JS Atomic 04</h1>
-  <!-- Answer the 3 questions above here -->
-  <h2>1. What is the data-type (e.g. string or integer) of the information that comes in? What happens if the user inputs a number -- does it stay an integer? Use `typeof` and `console.log()` to help with this</h2>
-  <p>This from webdevelopernotes.com: It's important to remember that the value returned by prompt() and subsequently stored in a variable will always be a string data type. This is fine if you are dealing with text, but might present problems to the code if you plan to receive numeric data through prompt(). Javascript provides two functions to convert this string value to a numeric data type; parseInt() and parseFloat(). The parseInt() converts a string to an integer value while parseFloat() parses the string converting it to a floating point number.</p>
+  <h1>JS Atomic 06c</h1>
+  
+  <h2>If you collect the user's input as a string (i.e. without using `parseInt()` to turn it into an integer), does `==` work to compare the input to the stored secret number? Would `===` work? Which is best?</h2>
+  <p>When I did not use "parseInt()" and just used the simple = to compare the input "15" to the secret number 57 it was treated as a match (and probably just reassigned the value of secretNumber to "15". When I changed the simple = to == it was no longer a match. When I use "parseInt()" and just = I still get a match. If I use === to match, the string "57" and the integer 57 do not match.</p>
+  <p>"Better" depends on how exact you want to be. It's not exactly the same thing, because it's not stored in Javascript, but let's say you are trying to retrieve your password and you have a clue that is "mother's maiden name." When you set up the retrieval question you wrote "Jane Smith" and when you went to use the retrieval question you wrote "Smith." Should that work? If the on-screen prompt is for entering something like a password, I think I would want the exactness of ===. If I have, say, a promo code, and for some reason we were not consistent about using parseInt on the various pages where the promo code prompt might appear, I would want the promo code to accept either the string "33783" or integer 33783 so I don't anger the customer. Similarly if the promo code is "Patrick Clark" because the company wants to track responses that come from my radio talk show, I would want to accept anything close enough that I could recognize it as coming from the Patrick Clark show. Not a great example but there it is. </p>
+
+  <h2>What is the difference between `==` and `===`?</h2>
+  <p>The "==" will match the string "57" with the integer 57. The "===" will not. Both must be integer 57 for "===" to result in a match. </p>
