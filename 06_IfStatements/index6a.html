@@ -1,0 +1,84 @@
+
+
+<!doctype HTML>
+<html>
+<head>
+  <title>JS Atomic 04</title>
+  <script type="text/javascript" src="global6a.js"></script>
+</head>
+<body>
+  <h1>JS Atomic 06</h1>
+  
+  <h2>6A What do you call `true` and `false` values? How is `true` similar or dissimilar from `"true"`? Can they be used in the same way?</h2>
+  <p>This is kind of airy, but according to W3Schools, everything with a "real" value is true, everything without is false. Null, false, "", NaN are examples of things that would return false. None of this bears any resemblance to the English-language definitions of true and false, so I might be better off not trying to draw a parallel between them.</p>
+
+  <h3>Predictions</h3>
+    <p> console.log( "5 == '5' is " + (5 == '5') );<br> 
+        true - this is the Sumeet selection
+    </p>
+    <p> console.log( "5 == 'five' is " + (5 == 'five') );<br>
+        predict true<br>
+        actual false<br>
+        discrepancy - I was wrong about how lenient "lenient equal" is.
+    </p>
+    <p> console.log( "5 == '6' is " + (5 == '6') );<br>
+        predict false<br>
+        actual false
+    </p>
+    <p> console.log( "5 === '5' is " + (5 === '5') );<br>
+        predict false<br>
+        actual false
+    </p>
+    <p> console.log( "5 == 2 + 3 is " + (5 == 2 + 3) );<br>
+        predict true<br>
+        actual true
+    </p>
+    <p> console.log( "5 == 5 is " + (5 == 5) )<br>
+        predict true<br>
+        actual true
+    </p>
+    <p> console.log( "5 === 5 is " + (5 === 5) );<br>
+        predict true<br>
+        actual true
+    </p>
+    <p> console.log( "true == 'true' is " + (true == 'true') );<br>
+        predict true<br>
+        actual false<br>
+        discrepancy - I was wrong about "lenient equal"
+    </p>
+    <p> console.log( "true === 'true' is " + (true === 'true') );<br>
+        predict false<br>
+        actual false
+    </p>
+    <p> console.log( "true == false is " + (true == false) );<br>
+        predict false<br>
+        actual false
+    </p>
+    <p> console.log( "5 == 12 is " + (5 == 12) );<br>
+        predict false<br>
+        actual false
+    </p>
+    <p> console.log( "5 != 12 is " + (5 != 12) );<br>
+        predict true<br>
+        actual true
+    </p>
+    <p> console.log( "5 < 12 is " + (5 < 12) );<br>
+        predict true<br>
+        actual true
+    </p>
+    <p> console.log( "5 <= 12 is " + (5 <= 12) );<br>
+        predict true<br>
+        actual true
+    </p>
+    <p> console.log( "5 > 12 is " + (5 > 12));<br>
+        predict false<br>
+        actual false
+    </p>
+    <p> console.log( "5 >= 12 is " + (5 >= 12));<br>
+        predict false<br> 
+        actual false
+    </p>
+
+
+
+
