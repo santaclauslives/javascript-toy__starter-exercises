@@ -3,12 +3,10 @@
 var password = "8reindeer"
 var guess = prompt("Guess the password: ")
 
-if (guess === password)
-    {
+if (guess === password) {
       alert("Well done!");
-    }
-  else
-    {
+  }
+else {
       alert("Sorry, the password is " + password + " . ");
-    }
+  }
 
